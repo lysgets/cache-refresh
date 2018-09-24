@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ethan_CacheRefresh>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends></depends>
+        </Ethan_CacheRefresh>
+    </modules>
+</config>

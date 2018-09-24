@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ethan_CacheRefresh>
+            <version>1.0.0</version>
+        </Ethan_CacheRefresh>
+    </modules>
+    <global>
+        <models>
+            <cacherefresh>
+                <class>Ethan_CacheRefresh_Model</class>
+            </cacherefresh>
+        </models>
+    </global>
+    <crontab>
+        <jobs>
+            <clean_cache_everymin>
+                <schedule><cron_expr>* * * * *</cron_expr></schedule>
+                <run><model>cacherefresh/observer::refresh</model></run>
+            </clean_cache_everymin>
+        </jobs>
+    </crontab>
+</config>
